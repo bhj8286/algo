@@ -2,7 +2,7 @@
 
 # for b in blood_type:
 #     print(b)
-#     if b == 0 and b == 1:
+#     if b == blood_type[0] and b == blood_type[1]:
 #         print(3)
 #     else:
 #         print(2)
