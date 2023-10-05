@@ -6,7 +6,7 @@
 #         print(3)
 #     else:
 #         print(2)
-blood_list = ['A', 'A', 'A', 'O', 'B' 'B', 'AB', 'AB', 'O']
+blood_list = ['A', 'A', 'A', 'O', 'B', 'B','O', 'AB', 'AB', 'O']
 
 blood_dict = {
     'A' : 0,
@@ -19,3 +19,4 @@ for blood in blood_list:
     blood_dict[blood] += 1
 
 print(blood_dict)
+
