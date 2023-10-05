@@ -20,3 +20,15 @@ for blood in blood_list:
 
 print(blood_dict)
 
+location_list = ['서울', '부산', '부산', '서울', '대전', '광주', '제주', 'LA']
+
+location_dict = {}
+
+for location in location_list:
+
+    if location in location_dict.keys():
+        location_dict[location] += 1
+    else:
+        location_dict[location] = 1
+
+print(location_dict)
