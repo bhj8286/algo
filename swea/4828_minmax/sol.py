@@ -26,7 +26,7 @@ sys.stdin = open('input.txt')
 T = int(input())
 
 for tc in range(1, T+1):
-    N = int(input())
+    N = int(input())  # 사용하진않지만 다른 언어에서는 사용해야 할 수도 있기때문에 변수로서 받아둔다. 파이썬에선 사용하지 않음
 
     numbers = list(map(int, input().split()))
 
