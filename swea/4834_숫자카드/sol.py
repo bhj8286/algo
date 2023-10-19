@@ -1,4 +1,3 @@
-
 import sys
 sys.stdin = open('input.txt')
 
@@ -27,3 +26,6 @@ for tc in range(1, T+1):
             card_number = idx
 
     print(f'#{tc} {card_number} {card_count}')
+    
+    
+
