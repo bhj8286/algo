@@ -4,8 +4,7 @@ def solution(n):
         a, b = divmod(n, i)
         if b == 0:
             count += 1
-        if a * b == n:
-            count -= 1
+        
 
     return count
 
