@@ -5,7 +5,7 @@ def solution(n):
         num_list.append(num)     #착각했음 삭제되는 값이 있기때문에 넉넉하게 숫자의 범위를 설정해줘야함 
         for k in num_list: 
             if '3' in str(k) or k % 3 == 0:
-                num_list.pop()
+                num_list.pop()  #참고: num_list의 앞 숫자부터 k로써 등장한다, 조건에 부합하면 마지막인, 즉 가장 최근 나온 숫자를 pop한다
 
     answer = num_list[n-1]          
     return answer
