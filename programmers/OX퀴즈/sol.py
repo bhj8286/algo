@@ -21,3 +21,14 @@ def solution(quiz):
 
 print(solution(["3 - 4 = -3", "5 + 6 = 11"]))
 print(solution(["19 - 6 = 13", "5 + 66 = 71", "5 - 15 = 63", "3 - 1 = 2"]))
+
+
+
+
+# eval이라는 문자열을 반아 수식으로 꼐산해주는 함수가 있다고 합니다
+def valid(equation):
+    equation = equation.replace('=', '==')
+    return eval(equation)
+
+def solution(equations):
+    return ["O" if valid(equation) else "X" for equation in equations]
