@@ -1,7 +1,7 @@
 # 풀이 과정: 직접 파이썬 튜터로 돌리면서 보여주는게 이해가 더 빠를 것같다 
 def solution(babbling):
     answer = 0
-    baebae = ["aya", "ye", "woo", "ma"]  # 아기가 발음할 수 있는 것들을 리스트로 따로 작성 
+    baebae = ["aya", "ye", "woo", "ma"]  # 아기가 발음할 수 있는 것들을 리스트로 따로 작성, 왜? 반복문을 돌리기 위해
     check_list=[]
     for i in babbling:
         for j in baebae:   # => 반복문 실행 
