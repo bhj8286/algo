@@ -13,3 +13,12 @@ def solution(array):
 print(solution([1, 2, 3, 3, 3, 4]))
 print(solution([1, 1, 2, 2]))
 print(solution([1]))
+
+
+
+def solution(array):
+    while len(array) != 0:
+        for i, a in enumerate(set(array)): ## 같이 스터디하면 좋을 부분 : 왜 set를 쓰는가?
+            array.remove(a)
+        if i == 0: return a
+    return -1
