@@ -30,7 +30,7 @@ def solution(polynomial):
         total.pop(0)
         total = total[0]
         
-    elif total[1] == '':
+    elif total[1] == '':  # 상수항만 있는 경우 간과
         total = total[0]
         
     elif total[0] != '0':
