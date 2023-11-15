@@ -1,6 +1,5 @@
-# 파이썬 문자열에서 숫자 분리하기를 찾아보고 풀어보자
 def solution(polynomial):
-    answer = ''
+    answer = []
     result = ''
     my = []
     total = []
@@ -14,33 +13,33 @@ def solution(polynomial):
             new_po = i.replace('x', '*1')
             my.append(int(eval(new_po)))
         
-            
-
-            
-        
-             
-    
         elif 'x' not in i and i.isdecimal() == True:
-            total.append(str(i))
+            answer.append(int(i))
 
     
-        
-    result+=str(sum(my))+'x'  
+    if sum(my) == 1:
+        result = 'x'
+    elif  sum(my) == 0:
+        result = ''
+    else:
+        result+=str(sum(my))+'x'  
+    total.append(str(sum(answer)))
     total.append(result)
-    total.append(answer)
-    if total[1] == '':
-        total.pop()
+
+    if total[0] == '0':
+        total.pop(0)
         total = total[0]
         
-            
+    elif total[1] == '':
+        total = total[0]
         
-    elif total[1] != '':
+    elif total[0] != '0':
         total = total[1] + ' + '+ total[0]
 
-    return total
-    
 
-        
-    
+    return total
+     
 print(solution("3x + 7 + x"))
 print(solution("x + x + x"))
+print(solution("x + 2 + 1" ))
+print(solution("1 + 2 + 3"))
