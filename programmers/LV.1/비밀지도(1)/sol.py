@@ -34,7 +34,7 @@ def solution(n, arr1, arr2):
     for g in answer:
         g = list(g)
         if len(g) != n:
-            while len((g)) < n:
+            while len((g)) < n:  # ! while 범위 설정 유의 !
                 g.insert(0," ")
             g = "".join(g)
             result.append(g)
