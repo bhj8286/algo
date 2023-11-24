@@ -21,6 +21,8 @@ print(solution(["ABACD", "BCEFD"],     ["ABCD","AABB"]))
 print(solution(["AA"],  ["B"]))
 print(solution(["AGZ", "BSSS"], ["ASA","BGZ"]))
 
+#find 함수 참조
+
 
 
 

@@ -1,8 +1,8 @@
 #첫 번째 풀이
 def solution(phone_number):
     answer = ''
-    pn = ''.join(reversed(phone_number))
-    real_num = []
+    pn = ''.join(reversed(phone_number))  ### 거꾸로 돌려버려서 숫자 배열자체가 달라지게 됨
+    real_num = []  
     num_list = []
     for _ in pn:
         num_list.append(_)
@@ -16,6 +16,7 @@ def solution(phone_number):
 print(solution("01033334444"))
 print(solution("027778888"))
 
+# 일부 수정
 def solution(phone_number):
     answer = ''
     # pn = ''.join(reversed(phone_number))
@@ -52,3 +53,4 @@ def solution(phone_number):
 
 print(solution("01033334444"))
 print(solution("027778888"))
+print(solution("0000"))
