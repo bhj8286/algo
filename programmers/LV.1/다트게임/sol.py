@@ -1,6 +1,7 @@
 # 내 풀이
 def solution(dartResult):
     answer = []
+    # 띄어쓰기를 기준으로 나누고 eval할거라 아래와 같이 치환
     dartResult = dartResult.replace('*', 'k ') # 나중에 헷갈리거나 반복문 돌릴 때 쉽게 인식하기 위해 임의로 조정  
     dartResult = dartResult.replace('#', '# ')
     # 문제 풀이 메커니즘 생각부터 eval을 염두하고 시작했기에 다음과 같이 치환
