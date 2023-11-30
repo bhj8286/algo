@@ -1,4 +1,4 @@
-# 첫번째 코드 런타임에러, 테스트 케이스 불통 등 문제가 많다
+# 첫번째 코드: 답은 나오는데 런타임에러, 테스트 케이스 불통 등 문제가 많음
 def solution(park, routes):
     answer = []
     park_zone = [[char for char in j] for j in park]
