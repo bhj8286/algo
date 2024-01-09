@@ -44,7 +44,10 @@ print(solution(["SOO","OOO","OOO"], ["E 2","S 2","W 1"]))
 print(solution(["SOO","OXX","OOO"], ["E 2","S 2","W 1"]))
 print(solution(["OSO","OOO","OXO","OOO"], ["E 2","S 3","W 1"]))
 
+
+
 # 스터디원들 코드 
+
 def solution(park, routes):
     # 위치좌표
     loc = [0, 0]
